@@ -1,6 +1,6 @@
-resource "null_resource" "versions" {
+resource "null_resource" "is_ic_installed" {
 	provisioner "local-exec" {
-		command = "terraform version"
+		command = "ibmcloud"
 }
 }
 
